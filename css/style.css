@@ -1,10 +1,11 @@
 body {
   margin: 0;
+  background-color: black;
 }
 
 header {
-  background-color: white;
-
+  background-color: transparent;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -12,7 +13,7 @@ header {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  color: green;
+  color: white;
 }
 
 .search-button {
@@ -34,11 +35,37 @@ header {
   align-items: center;
 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  height: 60px;
+  height: 50px;
   padding: 0.5rem;
 }
 
 .search-button img {
   width: 1rem;
   height: 1rem;
+}
+
+.sign-up-button {
+  font-family: "Inter", sans-serif;
+
+  width: 70px;
+  height: 30px;
+
+  list-style: none;
+  cursor: pointer;
+
+  background-color: white;
+  color: black;
+}
+
+.login-button {
+  font-family: "Inter", sans-serif;
+
+  width: 70px;
+  height: 30px;
+
+  list-style: none;
+  cursor: pointer;
+
+  background-color: white;
+  color: black;
 }
