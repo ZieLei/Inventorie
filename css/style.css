@@ -147,3 +147,57 @@ header {
   flex-direction: column;
   gap: 0.2rem;
 }
+
+.signup-card {
+  background-color: rgba(255, 255, 255, 0.90);
+
+  width: 60rem;
+  height: 40rem;
+
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-card:hover {
+  background-color: white;
+
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.50);
+}
+
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.signup-banner {
+  flex: 1;
+  background-color: gray;
+}
+
+.signup-form {
+  font-family: "Inter", sans-serif;
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-form input {
+  width: 100%;
+}
