@@ -185,6 +185,14 @@ header {
   flex: 1;
   background-color: gray;
   margin: 7px;
+  overflow: hidden;
+}
+
+.auth-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .signup-banner {
@@ -246,6 +254,16 @@ header {
   background: rgba(0, 0, 0, 0.10);
 }
 
+.auth-text {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.auth-prompt {
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .submit-button {
   width: 336px;
   height: 40px;
@@ -275,6 +293,30 @@ header {
 .submit-button:active {
   transform: translateY(0);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  width: 336px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.divider.divider::before {
+  margin-right: 0.75rem;
+}
+
+.divider::after {
+  margin-left: 0.75rem;
 }
 
 .social-login {
