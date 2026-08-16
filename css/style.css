@@ -148,7 +148,7 @@ header {
   gap: 0.2rem;
 }
 
-.signup-card {
+.auth-card {
   background-color: rgba(255, 255, 255, 0.95);
 
   width: 60rem;
@@ -162,14 +162,14 @@ header {
   transition: transform 0.4s ease-out, box-shadow 0.2s ease, background-color 0.5s ease-in;
 }
 
-.signup-card:hover {
+.auth-card:hover {
   background-color: white;
 
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.30);
 }
 
-.signup-container {
+.auth-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,14 +181,21 @@ header {
   text-align: center;
 }
 
-.signup-banner {
+.auth-banner {
   flex: 1;
   background-color: gray;
   margin: 7px;
+}
+
+.signup-banner {
   border-radius: 6px 0 0 6px;
 }
 
-.signup-form {
+.login-banner {
+  border-radius: 0 6px 6px 0;
+}
+
+.auth-form {
   font-family: "Inter", sans-serif;
 
   flex: 1;
