@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  background-color: black;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000, #1c1c1c);
+  background-attachment: fixed;
 }
 
 header {
@@ -47,6 +49,7 @@ header {
 .sign-up-button {
   font-family: "Inter", sans-serif;
   font-weight: 600;
+  font-size: 14px;
 
   width: 90px;
   height: 35px;
@@ -56,8 +59,11 @@ header {
   border: none;
   background: none;
   border-radius: 10px;
+  text-decoration: none;
 
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: white;
   color: black;
@@ -81,8 +87,8 @@ header {
 
 .login-button {
   font-family: "Inter", sans-serif;
-
   font-weight: 600;
+  font-size: 14px;
 
   width: 90px;
   height: 35px;
@@ -92,8 +98,11 @@ header {
   border: 2px solid white;
   background: none;
   border-radius: 10px;
+  text-decoration: none;
 
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: transparent;
   color: white;
@@ -140,12 +149,43 @@ header {
   max-width: 800px;
 }
 
+.main-text,
+.subtitle-text {
+  margin: 0;
+  width: 100%;
+}
+
 .landing-texts {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 0.2rem;
+}
+
+.what-is-inventorie {
+  font-family: "Inter", sans-serif;
+  color: white;
+  padding: 5rem 4rem;
+  box-sizing: border-box;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.what-is-inventorie h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.what-is-inventorie p {
+  max-width: 500px;
+  text-align: left;
+
+  font-size: 18px;
 }
 
 .auth-card {
